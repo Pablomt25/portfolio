@@ -153,7 +153,7 @@ document.querySelectorAll("img[data-src]").forEach((img) => {
 document.getElementById('downloadCV').addEventListener('click', function () {
   // Crear un enlace temporal para la descarga
   const link = document.createElement('a');
-  link.href = 'Curriculum.pdf'; // Cambia esta ruta por la ubicación real de tu CV
+  link.href = '/portfolio/Curriculum.pdf';
   link.download = 'Pablo_Moreno_Tirado_CV.pdf';
   document.body.appendChild(link);
   link.click();
