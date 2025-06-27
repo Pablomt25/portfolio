@@ -884,3 +884,53 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+        /* Estilos para el botón de descarga de CV */
+        .cv-download {
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .btn-cv {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-cv:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        
+        .btn-cv:active {
+            transform: translateY(0);
+        }
+        
+        .btn-cv i {
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cv-download {
+                text-align: center;
+            }
+            
+            .btn-cv {
+                width: 100%;
+                justify-content: center;
+                max-width: 300px;
+            }
+        }
+
